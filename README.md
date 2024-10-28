@@ -9,7 +9,7 @@ I don’t like seeing people silenced, misled, or having too much power concentr
 
 I believed my volunteering was supporting a foundation, not a personal or corporate product, so I feel a bit misled.
 
-I want people to continue attending WordCamps but also participate in these events. Ideally, every WordCamp could include an Alt Ctrl Org meetup with separate governance.
+I want people to continue attending WordCamps but also participate in these events. Ideally, every WordCamp could include an Alt Ctrl Org meetup with its own governance.
 
 By June, I hope there will be an independent governance initiative in place that we can vote on to transfer control somewhere else. Until then, we will bring people together and set up a group, to seek to oraganise alternative controls.
 
