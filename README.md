@@ -11,7 +11,7 @@ I believed my volunteering was supporting a foundation, not a personal or corpor
 
 I want people to continue attending WordCamps but also participate in these events. Ideally, every WordCamp could include an Alt Ctrl Org meetup with its own governance.
 
-By June, I hope there will be an independent governance initiative in place that we can vote on to transfer control somewhere else. Until then, we will bring people together and set up a group, to seek to oraganise alternative controls.
+By June, I hope there will be an independent governance initiative in place that we can vote on to transfer control to on the night. Until then, we will bring people together and set up a group, to seek to oraganise alternative controls.
 
 Alt Ctrl Org 
 
