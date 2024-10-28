@@ -2,5 +2,9 @@ body {
     background-image: url('/ACO-Gradient.png'); 
     background-size: cover; 
     background-repeat: no-repeat; 
-    background-position: center; 
+    background-position: center;
+    font-family: 'Nunito', sans-serif; /* Font settings */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
 }
