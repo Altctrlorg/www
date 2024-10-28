@@ -27,6 +27,6 @@ body {
 
 @media (max-width: 768px) {
     .float-right {
-        max-width: 250px; 
+        max-width: 50%; 
     }
 }
