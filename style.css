@@ -30,3 +30,71 @@ body {
         max-width: 50%; 
     }
 }
+
+
+.navbar {
+    background-color: #FFFFFF;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px; /* Set logo size */
+    height: auto;
+    margin-right: 20px; /* Space between logo and menu */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-grow: 1; /* Allows the menu to take up remaining space */
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #EF3B24;
+    font-size: 16px;
+    padding: 8px 12px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #FED206;
+    color: #000000;
+    border-radius: 4px;
+}
+
+.menu li a.active {
+    background-color: #EF3B24;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+/* Responsive: Stack logo above menu on smaller screens */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column; /* Stack logo above the menu */
+        align-items: center; /* Center-align items in the navbar */
+    }
+
+    .logo {
+        margin-right: 0; /* Remove right margin since logo is above menu */
+        margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .menu li {
+        margin: 5px 10px; /* Slightly smaller margins on small screens */
+    }
+}
