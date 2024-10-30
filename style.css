@@ -104,7 +104,7 @@ body {
     border-radius: 4px;
 }
 
-/* Responsive: Stack logo above menu on smaller screens */
+/* Responsive: Stack logo above menu on smaller screens, center and stack menu items */
 @media (max-width: 600px) {
     .navbar {
         flex-direction: column; /* Stack logo above the menu */
@@ -112,21 +112,21 @@ body {
     }
 
     .logo {
-        margin-right: 0; /* Remove right margin since logo is above menu */
-        margin-bottom: 10px; /* Add bottom margin for spacing */
+        padding: 0; /* Remove all padding */
+        margin: 0; /* Remove all margin */
     }
 
     .menu {
         flex-direction: column; /* Stack menu items vertically */
         align-items: center; /* Center-align menu items */
-        padding-left: 0; /* Remove right margin since logo is above menu */
-
+        padding: 0; /* Remove all padding */
+        margin: 0; /* Remove all margin */
     }
 
     .menu li {
-        margin: 2px 0; /* Space between each menu item */
-    }
-
+        padding: 0; /* Remove all padding */
+        margin: 2px; /* Remove all margin */   
+     }
 }
 
 
