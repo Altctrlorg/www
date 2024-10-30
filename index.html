@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <link rel="preload" href="https://github.com/Altctrlorg/www/blob/main/TalkingWappu.PNG?raw=true" as="image">
     <title>Alt Ctrl Org: An evening event - Track 4</title>
-
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <style>
+      /* Set the size of the map */
+      #map {
+        height: 300px;
+        width: 100%;
+      }
+    </style>
     <link rel="stylesheet" href="formstyle.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,15 +32,9 @@
           <li><a href="sponsors.html">Sponsors</a></li>
           <li><a href="speakers.html">Speakers</a></li>
           <li><a href="events-basel-june-2025.html">Basel June 2025</a></li>
-          <li><a href="https://github.com/Altctrlorg/www" target="_blank">GitHub</a></li>
-          <li><a href="https://x.com/altctrlorg/" target="_blank">X / Twitter</a></li>
-
           <!-- 
           <li><a href="about.html">About</a></li>
           <li><a href="swag.html">Swag</a></li>
-          <li><a href="sponsors.html">Sponsors</a></li>
-          <li><a href="speakers.html">Speakers</a></li>
-          <li><a href="volunteers.html">Volunteers</a></li>
           <li><a href="set-up.html">Run a meet up</a></li>
           -->
         </ul>
@@ -51,13 +52,110 @@
 
         <h2>Independent Governance</h2>
         <p>Alt Ctrl Org will give voices to different, novel and challenging ideas, it will be free to attend, but small donations are welcome. Any remaining sponsorship or entry donations will be evenly distributed to our speakers and volunteers on the night, ensuring their contributions are supported.</p>
-        <p>If you’re interested in joing our board email us and let us know <a href="mailto:altctrlorg@proton.me">altctrlorg@proton.me</a>. We need you!</p>
+        <p>If you’re interested in joiningg our board email us and let us know <a href="mailto:altctrlorg@proton.me">altctrlorg@proton.me</a>. We need you!</p>
 
+        <div class="card-container">
+          <!-- Card 1 -->
+          <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Person's Image" class="card-image">
+            <h2 class="card-name">John Doe</h2>
+            <p class="card-title">Senior Developer</p>
+            <div class="card-links">
+              <a href="https://twitter.com/username" target="_blank">Twitter</a>
+              <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+        
+          <!-- Card 2 -->
+          <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Person's Image" class="card-image">
+            <h2 class="card-name">Jane Smith</h2>
+            <p class="card-title">Project Manager</p>
+            <div class="card-links">
+              <a href="https://twitter.com/username" target="_blank">Twitter</a>
+              <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+        
+          <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Person's Image" class="card-image">
+            <h2 class="card-name">Jane Smith</h2>
+            <p class="card-title">Project Manager</p>
+            <div class="card-links">
+              <a href="https://twitter.com/username" target="_blank">Twitter</a>
+              <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Person's Image" class="card-image">
+            <h2 class="card-name">Jane Smith</h2>
+            <p class="card-title">Project Manager</p>
+            <div class="card-links">
+              <a href="https://twitter.com/username" target="_blank">Twitter</a>
+              <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+          <!-- Add more cards as needed -->
+        </div>
+        
         
 
-        <h2>Set Up Your Own Meet up</h2>
-        <p>More info coming soon, watch this space!</p>
-       
+
+        <h2>Find a meet up</h2>
+        
+        <div id="map"></div>
+
+<!-- Include Leaflet JavaScript library -->
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+<script>
+  // Event data array
+  const events = [
+    {
+      title: "Basel EU - June 2025",
+      date: "Aug 2025",
+      url: "https://www.altctrl.org/events-basel-june-2025.html",
+      position: [47.5634073, 7.597622] // Example coordinates (New York)
+    },
+    {
+      title: "Portland Oregon US TBC",
+      date: "Aug 2025",
+      url: "#",
+      position: [45.5152, -122.6784] // Example coordinates (Los Angeles)
+    },
+    // Add more events as needed
+  ];
+
+  // Initialize the map centered on the globe
+  const map = L.map('map').setView([20, 0], 2); // Global view with zoom level 2
+
+  // Add OpenStreetMap tiles
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  // Add markers and info bubbles for each event
+  events.forEach(event => {
+    const marker = L.marker(event.position).addTo(map);
+    marker.bindPopup(`
+      <h3>${event.title}</h3>
+      <p>Date: ${event.date}</p>
+      <a href="${event.url}" target="_blank">More Info</a>
+    `);
+  });
+</script>
+
+        
+        
+        
+<a href="https://www.altctrl.org/events-basel-june-2025.html" class="button">Basel Switzerland EU - June 2025</a>
+<br>
+<a href="#" class="button">Portland Oregon US - August 2025 TBC</a>
+
+
+<h2>Set Up Your Own Meet up</h2>
+<p>More info coming soon, watch this space!</p>
 
         <h2>Join the email list!</h2>
         <p>Spaces are limited for this event sign up below to get on the list for ticket information and venue details. Be part of Track 4, the track that they won’t have but need to have. Let's alternate the control and organise!</p>
@@ -110,6 +208,15 @@
         <script>
             fetch("https://assets.mailerlite.com/jsonp/1161701/forms/136263339018814901/takel")
         </script>
+
+      <nav class="navbar">
+        <img src="https://github.com/Altctrlorg/www/blob/main/TalkingWappu.PNG?raw=true" alt="Logo" class="logo"> <!-- Add your logo here -->
+        <ul class="menu">
+        <li><a href="https://github.com/Altctrlorg/www" target="_blank">GitHub</a></li>
+          <li><a href="https://x.com/altctrlorg/" target="_blank">X / Twitter</a></li>
+        </ul>
+      </nav>
+
     </div>
     
 </body>
