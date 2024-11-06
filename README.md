@@ -1,4 +1,3 @@
-As you can probably tell I have no idea what I am doing, so why not come and help us!
 
 ![Wapuu](https://github.com/Altctrlorg/www/blob/main/AltCtrlOrgV.PNG?raw=true)
 
@@ -11,6 +10,4 @@ I believed my volunteering was supporting a foundation, not a personal or corpor
 
 I want people to continue attending WordCamps but also participate in these events. Ideally, every WordCamp could include an Alt Ctrl Org meet up with its own governance.
 
-By June, I hope there will be an independent governance initiative in place that we can vote on to transfer control to on the night. Until then, we will bring people together and set up a group, to seek to oraganise alternative controls.
-
-Alt Ctrl Org - For the love of WordPress
+By June, the aim is to have an independent governance model ready for community voting, creating a pathway for shared leadership. Until then, efforts will focus on building connections, organizing a group, and laying the groundwork for an open, inclusive, and community-driven WordPress space.
